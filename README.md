@@ -23,7 +23,7 @@ docker run --name web03 -d -p 8082:80 -v /home/ubuntu/dev/html:/usr/share/nginx/
                               host:container              host:container
 ```
 
-# Docker, but let's build a contaier ourselves
+# Docker, but let's build a container ourselves
 
 ```
 docker build -t some-content-nginx .
@@ -154,9 +154,9 @@ default         254.mcs.mail.ru 0.0.0.0         UG    0      0        0 ens3
 ```
 
 
-| network       | netmask           | CIDR notation   |
-|---------------|-------------------|-----------------|
-|`172.0.0.0`    | `255.0.0.0`       | `172.0.0.0/8`   |
-|`172.17.0.0`   | `255.255.0.0`     | `172.17.0.0/16` |
-|`172.17.123.0` | `255.255.255.0`   | `172.17.0.0/24` |
-|`172.17.0.2`   | `255.255.255.255` | `172.17.0.2/32` |
+| network        | netmask           | CIDR notation   |
+| -------------- | ----------------- | --------------- |
+| `172.0.0.0`    | `255.0.0.0`       | `172.0.0.0/8`   |
+| `172.17.0.0`   | `255.255.0.0`     | `172.17.0.0/16` |
+| `172.17.123.0` | `255.255.255.0`   | `172.17.0.0/24` |
+| `172.17.0.2`   | `255.255.255.255` | `172.17.0.2/32` |
